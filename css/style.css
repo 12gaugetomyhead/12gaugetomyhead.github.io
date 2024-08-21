@@ -18,14 +18,14 @@ body {
 }
 
 h1 {
-    font-size: 2em; /* Smaller font size */
+    font-size: 2em; /* Adjust size to be smaller */
     text-align: center;
     color: #ddd;
     font-family: 'Cascadia', sans-serif; /* Use the custom font */
     text-shadow: 
-        0 0 5px rgba(255, 255, 255, 0.8), /* White glow */
-        0 0 10px rgba(255, 255, 255, 0.6), 
-        0 0 15px rgba(255, 255, 255, 0.4);
+        0 0 10px rgba(255, 255, 255, 0.8), /* Larger, brighter glow */
+        0 0 20px rgba(255, 255, 255, 0.6), 
+        0 0 30px rgba(255, 255, 255, 0.4); /* More diffuse glow */
 }
 
 .snowflakes {
