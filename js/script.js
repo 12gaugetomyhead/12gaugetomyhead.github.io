@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(overlay); // Add the overlay to the body
 
             // Play the background music
-            backgroundMusic.play().catch(error => {
+            backgroundMusic.play().then(() => {
+                console.log('Audio is playing');
+            }).catch(error => {
                 console.error('Error playing the audio:', error);
             });
         });
