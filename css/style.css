@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cascadia';
-    src: url('../fonts/Cascadia.ttf') format('truetype'); /* Adjust path based on CSS file location */
+    src: url('../fonts/Cascadia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,10 +18,14 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em; /* Smaller font size */
     text-align: center;
     color: #ddd;
-    font-family: 'Cascadia', sans-serif; /* Apply the custom font */
+    font-family: 'Cascadia', sans-serif; /* Use the custom font */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* White glow */
+        0 0 10px rgba(255, 255, 255, 0.6), 
+        0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .snowflakes {
