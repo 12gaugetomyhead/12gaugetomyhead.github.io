@@ -34,6 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }).catch(error => {
                 console.error('Error playing the audio:', error);
             });
+
+            // Additional debugging to check volume and playback
+            backgroundMusic.addEventListener('canplaythrough', () => {
+                console.log('Audio can play through');
+            });
+            backgroundMusic.addEventListener('play', () => {
+                console.log('Audio is playing');
+            });
+            backgroundMusic.addEventListener('error', (e) => {
+                console.error('Audio error:', e);
+            });
         });
     } else {
         console.error('Element with id "enter-text" not found.');
