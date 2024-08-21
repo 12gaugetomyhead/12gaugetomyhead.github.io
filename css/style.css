@@ -18,14 +18,28 @@ body {
 }
 
 h1 {
-    font-size: 2em; /* Adjust size to be smaller */
+    font-size: 2em; /* Smaller font size */
     text-align: center;
     color: #ddd;
-    font-family: 'Cascadia', sans-serif; /* Use the custom font */
+    font-family: 'Cascadia', sans-serif;
     text-shadow: 
-        0 0 10px rgba(255, 255, 255, 0.8), /* Larger, brighter glow */
-        0 0 20px rgba(255, 255, 255, 0.6), 
-        0 0 30px rgba(255, 255, 255, 0.4); /* More diffuse glow */
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 30px rgba(255, 255, 255, 0.4);
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 20px; /* Add padding to make it look like a button */
+    border: 2px solid #ddd; /* Add a border */
+    background-color: rgba(0, 0, 0, 0.6); /* Background color with transparency */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+h1:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+h1:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
 }
 
 .snowflakes {
@@ -50,6 +64,6 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(128, 128, 128, 0.1);
+    background: rgba(128, 128, 128, 0.3); /* Adjust transparency here */
     pointer-events: none;
 }
