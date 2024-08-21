@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zacky</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Prevent interaction with snowflakes */
+        }
+
+        .snowflake {
+            position: absolute;
+            color: #ddd; /* Light gray snowflakes */
+            font-size: 1.5em; /* Adjust size of snowflakes */
+            user-select: none; /* Prevent selection */
+        }
+    </style>
 </head>
 <body>
     <h1>Zacky</h1>
+    <div class="snowflakes"></div>
+    <script src="snowflake.js"></script>
 </body>
 </html>
