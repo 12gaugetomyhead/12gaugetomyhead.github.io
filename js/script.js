@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const enterText = document.getElementById('enter-text');
+    const backgroundMusic = document.getElementById('background-music');
 
     if (enterText) {
         enterText.addEventListener('click', () => {
@@ -26,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.body.innerHTML = ''; // Clear the existing content
             document.body.appendChild(overlay); // Add the overlay to the body
+
+            // Play the background music
+            backgroundMusic.play().catch(error => {
+                console.error('Error playing the audio:', error);
+            });
         });
     } else {
         console.error('Element with id "enter-text" not found.');
